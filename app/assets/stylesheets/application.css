@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+.right {
+  float:right !important;
+  margin-right:20px;
+  margin-top: 8px;
+  font-size:  15px;
+}
+
+/*.right_link:hover {
+  text-decoration: none !important;
+}*/
+
+.left {
+  margin-left: 20px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.list {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+/*padding-right: 20px;*/
+/*align-items: center;*/
+}
+
+.list > li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+

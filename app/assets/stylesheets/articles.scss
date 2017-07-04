@@ -1,0 +1,50 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.new_a {
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_f {
+
+  // width: 150px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.title_box {
+  // height: 500px;
+  width: 470px;
+
+}
+
+.content_box {
+// height: auto;
+    // margin: 0px -25px 0px 0px;
+    width: 470px;
+    height: 214px;
+    // cursor: auto;
+}
+
+// input {
+//    padding-top: 0;
+//    padding-left: 0;
+//    line-height: 1em; // this probably doesn't matter
+// }
+
+.content_f {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+// .con_f {
+//   padding: 60px;
+// }
