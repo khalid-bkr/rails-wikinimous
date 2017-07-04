@@ -11,6 +11,13 @@
 
   <body>
     <div class="navbar navbar-default">
+      <div>
+      <% if current_user %>
+      Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+      <% else %>
+      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+      <% end %>
+      </div>
       <div class="right"><%= link_to  "New article" , new_article_path  ,class:"right_link"%></div>
       <div class="navbar-left left"><%= link_to "Wikinimous" , articles_path  %></div>
     </div>

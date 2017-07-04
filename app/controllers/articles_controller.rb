@@ -1,10 +1,13 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: [:show, :edit]
+  before_filter :authorize
+
   def index
     @articles = Article.all
   end
 
   def show          # GET /articles/:id
-    @article = Article.find(params[:id])
+    # @article = Article.find(params[:id])
   end
 
   def new           # GET /articles/new
@@ -18,7 +21,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit          # GET /articles/:id/edit
-    @article = Article.find(params[:id])
+    # @article = Article.find(params[:id])
   end
 
   def update        # PATCH /articles/:id
@@ -37,5 +40,9 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :content)
+  end
+
+  def set_article
+    @article = Article.find(params[:id])
   end
 end
